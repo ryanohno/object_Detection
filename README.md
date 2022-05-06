@@ -19,5 +19,5 @@ from the begining, import printorder.py
 
 
 
- but I am encountering that when I run Detec4.py
- Printer prints time print once and when I press key it prints iamge, but never repeats the protocall
+It prints! 
+but very slow. so, I am afraid of people spamming the button.
