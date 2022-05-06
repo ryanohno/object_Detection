@@ -20,4 +20,4 @@ from the begining, import printorder.py
   
   
  but I am encountering that when I run Detec4.py
- Printer prints everything once, and not really 
+ Printer prints everything once, and not really print thing when button is pressed
