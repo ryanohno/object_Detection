@@ -20,7 +20,7 @@ import cv2
 from object_detector import ObjectDetector
 from object_detector import ObjectDetectorOptions
 import utils
-
+import printorder 
 
 def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
         enable_edgetpu: bool) -> None:
@@ -97,10 +97,9 @@ def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
       break
     cv2.imshow('object_detector', image)
     # Image Saved by pressing Key A
-    if cv2.waitKey(33) == ord('a'):
+    if cv2.waitKey(33) == ord('A'):
      cv2.imwrite('/home/pi/image/Test.png', image)
-     import printorder
-      print0
+     print0
 
   cap.release()
   cv2.destroyAllWindows()
