@@ -20,4 +20,10 @@ from the begining, import printorder.py
   
   
  but I am encountering that when I run Detec4.py
- Printer prints everything once, and not really print thing when button is pressed
+ Printer prints time print once and when I press key a, it fails and 
+ 
+ File "/home/pi/examples/lite/examples/object_detection/raspberry_pi/detect4.py", line 102, in run
+    print0
+NameError: name 'print0' is not defined
+
+shows this error
