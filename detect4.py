@@ -20,7 +20,8 @@ import cv2
 from object_detector import ObjectDetector
 from object_detector import ObjectDetectorOptions
 import utils
-from printorder import print0 
+
+
 from timeprint import createtxt
 from tprint import printtime
 from imageprint import printimg
