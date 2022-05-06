@@ -1,9 +1,10 @@
 # object_Detection
 
   Printorder = print0 funtion in order
-  1.import timeprint.py - generate timestamp in a text file
-  2.current_timeprint.py - print time.txt with subprocess. using LP command
-  3.imageprint.py - print image.png with subprocess. using LP command
+  
+1.import timeprint.py - generate timestamp in a text file
+2.current_timeprint.py - print time.txt with subprocess. using LP command
+3.imageprint.py - print image.png with subprocess. using LP command
 
 
 
