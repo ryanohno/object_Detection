@@ -16,14 +16,12 @@
 import argparse
 import sys
 import time
+
 import cv2
 from object_detector import ObjectDetector
 from object_detector import ObjectDetectorOptions
 import utils
-from printorder import print0 
-from timeprint import createtxt
-from tprint import printtime
-from imageprint import printimg
+
 
 def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
         enable_edgetpu: bool) -> None:
@@ -73,7 +71,7 @@ def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
 
     counter += 1
     image = cv2.flip(image, 1)
-    black_frame = cv2.imread("white-img2.jpg")
+    black_frame = cv2.imread("white-img3.jpg")
 
     # Run object detection estimation using the model.
     detections = detector.detect(image)
@@ -100,11 +98,8 @@ def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
       break
     cv2.imshow('object_detector', image)
     # Image Saved by pressing Key A
-    if cv2.waitKey(33) == ord('a'):
+    if cv2.waitKey(33) == ord('A'):
      cv2.imwrite('/home/pi/image/Test.png', image)
-     createtxt()
-     printtime()
-     printimg()
 
   cap.release()
   cv2.destroyAllWindows()
@@ -125,7 +120,7 @@ def main():
       help='Width of frame to capture from camera.',
       required=False,
       type=int,
-      default=480)
+      default=320)
   parser.add_argument(
       '--frameHeight',
       help='Height of frame to capture from camera.',
